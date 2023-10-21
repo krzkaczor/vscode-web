@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "VSCode web sample",
   "scripts": {
-    "sample": "node ./http.js"
+    "build": "mv ./node_modules ./node_modules2"
   },
   "author": "",
   "license": "MIT",
