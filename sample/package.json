@@ -8,6 +8,8 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "esbuild": "^0.19.5",
+    "esbuild-register": "^3.5.0",
     "vscode-web": "^1.75.0"
   }
 }
