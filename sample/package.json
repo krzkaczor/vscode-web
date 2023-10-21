@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "VSCode web sample",
   "scripts": {
-    "build": "true"
+    "rename-in-files": "grep -rl node_modules . | xargs sed -i .bak 's/node_modules/nm/g'",
+    "rename-dirs": "node -r esbuild-register rewrite_node_modules.ts",
+    "build": "yarn rename-in-files && yarn rename-dirs"
   },
   "author": "",
   "license": "MIT",
