@@ -5,13 +5,14 @@
   "scripts": {
     "rename-in-files": "grep -rl node_modules . | xargs sed -i .bak 's/node_modules/nm/g'",
     "rename-dirs": "node -r esbuild-register rewrite_node_modules.ts",
-    "build": "yarn rename-in-files && yarn rename-dirs"
+    "build": "true"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
     "esbuild": "^0.19.5",
     "esbuild-register": "^3.5.0",
+    "vercel": "^32.5.0",
     "vscode-web": "^1.75.0"
   }
 }
